@@ -1,0 +1,63 @@
+//JSON: JavaScript Object Notation
+//JS Object
+
+let user={
+    name:'Megan',
+    age:32,
+    isActive:true,  
+    salary: 50000,
+    city:'Pune'
+};
+
+console.log(typeof user);//object
+console.log(user);
+
+console.log('===========================');
+//JS objet to json string: JSON.stringify()
+//this process is called serialization/marshalling
+
+let jsonString=JSON.stringify(user);
+console.log(typeof jsonString);//string
+console.log(jsonString);
+
+//API testing: post api: json payload ---server---response 200
+console.log('===========================');
+//Json string to JS object: JSON.parse(): Deserialization/unmarshalling
+
+let userObj=JSON.parse(jsonString);
+console.log(typeof userObj);//object
+console.log(userObj);
+
+
+//Js nested object to json string: JSON.stringify()
+
+let customer1={
+    name:'MegaDivyan',
+    age:32,
+    isActive:true,
+    phone:'123-456-7890',
+    salary: 50000,
+    address:{
+        street:'123 Main St',
+        city:'New York',
+        zip:'10001',
+        country:'USA'
+    }
+};
+
+console.log(typeof customer1);//object
+console.log(customer1);
+
+console.log('===========================');
+
+let jsonString1=JSON.stringify(customer1, null, 2);//pretty print
+console.log(typeof jsonString1);
+console.log(jsonString1);
+
+console.log('===========================');
+
+jsoncustobject=JSON.parse(jsonString1);
+console.log(typeof jsoncustobject);
+console.log(jsoncustobject);
+
+

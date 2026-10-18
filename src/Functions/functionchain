@@ -1,0 +1,20 @@
+function login(){
+    console.log('login to the app');
+    search();
+}
+
+function search(){
+    console.log('search the product');
+    checkout();
+}
+
+function checkout(){
+    console.log('proceed to checkout');
+    logout();
+}
+
+function logout(){
+    console.log('logout from  the app');
+}
+
+login();

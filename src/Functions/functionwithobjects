@@ -1,0 +1,40 @@
+
+function getUserdata(username){
+    
+console.log('collecting data for '+username);
+let userInfo={};
+if(username==='Prince'){
+    userInfo={
+        name: 'Prince',
+        age: 35,
+        city: 'Mumbai'
+    }
+
+}else if(username==='Austin'){
+    userInfo={
+        name: 'Austin',
+        age: 25,
+        city: 'Amsterdam'
+    }}else if(username==='Aparna'){
+    userInfo={
+        name: 'Aparna',
+        age: 15,
+        city: 'Pune'
+    }}else if(username==='Rohan'){
+    userInfo={
+        name: 'Rohan',
+        age: 45,
+        city: 'Hyderabad'
+    }}else{
+console.log('name not found'+username)
+
+    }
+return userInfo;
+}
+
+    let personData=getUserdata('Prince');
+
+    console.log(personData);
+
+    console.log(personData.name, personData.city, personData.age);
+        
