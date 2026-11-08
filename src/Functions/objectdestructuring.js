@@ -54,3 +54,38 @@ let customer={
 let {hname, isActive,address:{scity,unit,location:{lat, long}}}=customer;
 console.log(hname,isActive,unit,scity, lat, long);
 
+
+//destructuring an array
+
+const browsers=['chrome','firefox','edge'];
+
+//normal access other way without destructuring
+
+/**const browser1=Browsers[0];
+const browser2=Browsers[1];
+const browser3=Browsers[2];
+
+console.log(browser1, browser2, browser3);*/
+
+
+const [browser1, browser2, browser3]=browsers;
+
+console.log(browser1,browser2,browser3);
+
+const[first,,third]=browsers;
+
+console.log(first, third);
+
+
+//object destructuring
+
+let employee={name:'Austin',role:'QA', experience:10};
+
+//normal access without destructure
+console.log(employee.name,employee.role,employee.experience);
+
+//with object destructuring
+
+let {name,experience}=employee;
+console.log(name,experience);
+

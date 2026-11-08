@@ -162,7 +162,85 @@ let refobj=userObj=>{
 let printobj=refobj(user);
 console.log(printobj);
 
+//Arrow function practice 
 
+
+let op=()=>console.log('Hi I am a automation engineer');
+
+op();
+
+
+let summ=(a,b)=>a+b;
+
+let r=summ(5,6);
+
+console.log (r);
+
+let sqr=num=>num*num;
+
+const reslt=sqr(5);
+console.log(reslt);
+
+//arrow function with object
+
+let person={
+    name:'Aarti',
+    age:34,
+    isActive:true
+}
+
+const getDetails=(person)=>`${person.name} ${person.age} ${person.isActive}`;
+
+let details=getDetails(person);
+
+console.log(details);
+
+//using object destructuring
+
+
+const getDetail=({name,age,isActive})=>`${name} ${age} ${isActive}`;
+
+let emp={
+    name:'Shruti',
+    age:37,
+    isActive:true
+}
+
+let disp=getDetail(emp);
+
+console.log(disp);
+
+//arrow function with default values
+
+let access=(username='admin',password='admin')=> `the username is  ${username} and the password is ${password}`;
+
+let cons=access();
+
+console.log(cons);
+
+
+//rest parameters with default value
+
+
+let browse=(browser='chrome',...details)=>{
+    console.log(`Browser: ${browser}`);
+    console.log(`details: ${details}`)
+}
+
+browse();
+
+browse('firefox',110.05, 'mozilla', 'headless');
+
+
+
+//
+const maxvalue=(a,b,c)=>{
+    return Math.max(a,b,c)
+    }
+
+const calc=maxvalue(10,20,30);
+
+console.log(calc);
 
 
 
