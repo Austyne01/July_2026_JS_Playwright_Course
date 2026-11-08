@@ -209,7 +209,7 @@ console.log("Title of second test case,", testSuite.testCases[1].title);
 
 console.log("Total no of test cases,", testSuite.testCases.length);
 
-/*Create an array users that holds 4 user objects (name, age, salary, isActive). Using a
+/*Q.11 Create an array users that holds 4 user objects (name, age, salary, isActive). Using a
 simple for loop, print the name of every user whose isActive value is true.*/
 
 
